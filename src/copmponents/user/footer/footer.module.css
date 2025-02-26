@@ -1,0 +1,21 @@
+.footer{
+    background-color:black;
+    color: #FAFAFA;
+    padding: 60px 0;
+}
+.footer input{
+    background-color:black;
+   top: -20px;
+   border:1PX solid white;  
+   border-radius: 5PX;  
+   padding: 4PX;
+}
+.emailSend{
+    left: 200px;
+   margin-top: 5px;
+   cursor: pointer;
+}
+.footer a{
+    text-decoration: none;
+    color: #FAFAFA;
+}

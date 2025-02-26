@@ -1,0 +1,35 @@
+.signup {
+    padding: 40px 0;
+}
+
+input {
+    width: 250px;
+    border: 0px ;
+    font-size: 14px;
+    border-bottom: 1px solid #aaa;  
+}
+.buttonCreate{
+    background-color:#DB4444 ;
+    color: #FAFAFA;
+    border: 0px;
+    width: 250px;
+    height: 50px;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+}
+
+.haveAccount{
+    text-decoration: none;
+    color: #000;
+    opacity: 0.7;
+    font-weight: 400;
+}
+.login{
+    text-decoration: none;
+    color: #000;
+    opacity: 0.7;
+    border-bottom: 2px solid #aaa;
+    font-weight: 500;
+}

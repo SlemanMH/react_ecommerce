@@ -1,0 +1,22 @@
+.login {
+    padding: 40px 0;
+}
+
+input {
+    width: 250px;
+    border: 0px ;
+    font-size: 14px;
+    border-bottom: 1px solid #aaa;  
+}
+button{
+    background-color:#DB4444 ;
+    color: #FAFAFA;
+    border: 0px;
+   padding: 10px 25px;
+    border-radius: 4px;
+   font-size: 14px;
+}
+.forget{
+    color: #DB4444;
+    font-size: 14px;
+}
