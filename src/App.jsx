@@ -10,7 +10,7 @@ import Checkout from './pages/user/checkout/Checkout'
 import About from './pages/user/about/About'
 import Contact from './pages/user/contact/Contact'
 import NotFound from './pages/user/notFound/NotFound'
-import Wishlist from './pages/user/wishlist/Wishlist'
+
 import ForgetPassword from './pages/user/forgetPassword/ForgetPassword'
 import ChangePassword from './pages/user/changePassword/ChangePassword'
 import Profile from './pages/user/profile/Profile'
@@ -101,10 +101,6 @@ export default function App() {
           {
             path: 'contact',
             element: <Contact />
-          },
-          {
-            path: 'wishlist',
-            element: <Wishlist />
           },
           {
             path:'profile',
