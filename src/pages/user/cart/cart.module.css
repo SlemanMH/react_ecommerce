@@ -26,6 +26,7 @@ thead{
     border-radius: 6px;
     padding: 5px 10px;
     font-size: 20px;
+    color: #111827;
 }
 
 .removeItem{
@@ -36,7 +37,7 @@ thead{
 }
 
 .clearBtn{
-    background-color: #634C9F;
+    background-color: #DB4444;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -44,7 +45,7 @@ thead{
     font-size: 14px;
 }
 .checkBtn{
-    background-color: #212529;
+    background-color: #DB4444;
     color: #fff;
     border: none;
     border-radius: 6px;

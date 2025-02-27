@@ -1,0 +1,55 @@
+.home{
+    color: #000;
+    opacity: 0.5;
+    font-weight: 500;
+}
+.about{
+    color: #000;
+    font-weight: 500;
+}
+.detailsOur{
+   margin: auto;
+}
+.detailsOur h2{
+    font-size: 60px;
+}
+.detailsOur p{
+    font-weight: 500;
+   font-size: small;
+}
+.black{
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 10px solid grey;
+}
+.serves{
+    width: 260px;
+    height: 260px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+   align-content: center;
+   border-radius: 4px;
+}
+.number{
+    margin-left: 85px;
+    font-size:40px;
+    font-weight: 600;
+}
+.servesParagraph{
+    margin-left: 50px;
+    font-weight: 500;
+}
+.serves:hover{
+    background-color: #DB4444;
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+ }
+ .employeeImg{
+    border-radius: 4px;
+ }
+ .servisImg{
+    margin: 9px;
+    align-items: center;
+ }

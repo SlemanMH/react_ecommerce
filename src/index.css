@@ -12,3 +12,62 @@ a {
 :root {
     --mainFont: 'Inter', sans-serif;
 }
+
+
+
+
+.error {
+  font-size: 13px;
+}
+
+.swiper-button-prev, 
+.swiper-button-next
+{
+    color: #DB4444 !important;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    background-color: #F3F4F6 !important;
+    
+}
+
+@media screen and (max-width: 576px) {
+    .swiper-button-prev, 
+    .swiper-button-next{
+       display: none !important;
+    }
+}
+
+.star-active{
+    color: #FACC15;
+}
+.star-not-active{
+    color: #D1D5DB;
+}
+
+.nav-link,
+.nav-link:hover {
+    color: #111827;
+}
+
+.page-link{
+    color: #DB4444 !important;
+}
+.active>.page-link{
+    background-color: #DB4444 !important;
+    border-color: #DB4444 !important;
+    color: #fff !important;
+}
+
+.ps-menu-label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .ps-menu-label{
+      text-align: center;
+      display: block;
+    }
+}

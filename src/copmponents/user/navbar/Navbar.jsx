@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { NavDropdown } from 'react-bootstrap';
 import wishlist from '../../../assets/images/navbar/wishlist.svg';
 import cart from '../../../assets/images/navbar/cart.svg';
-import user from '../../../assets/images/navbar/user.svg';
+import users from '../../../assets/images/navbar/user.svg';
 import style from './navbar.module.css';
+import { UserContext } from '../context/UserContext';
 export default function CustomNavbar() {
+  const navigate = useNavigate();
+  const {user ,setUser} = useContext(UserContext);
+  const logOut = () => {
+    localStorage.removeItem('userToken');
+    setUser(null);
+    navigate('/auth/login');
+  }
   return (
     <Navbar expand="lg" className={`${style.navbar} border-bottom bg-white`}>
     <Container>
@@ -26,7 +34,7 @@ export default function CustomNavbar() {
           <Nav.Link as={Link} to={'/'} onClick={()=>window.scroll(0,0)}>
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to={'/'} onClick={()=>window.scroll(0,0)}>
+          <Nav.Link as={Link} to={'/about'} onClick={()=>window.scroll(0,0)}>
             About
           </Nav.Link>
           <Nav.Link as={Link} to={'/products'} className={`${style.login} d-flex flex-column`} onClick={()=>window.scroll(0,0)}>
@@ -52,13 +60,14 @@ export default function CustomNavbar() {
           </Nav.Link>
           <Nav.Link as={Link} to={'/profile/info'} onClick={()=>window.scroll(0,0)} className='d-flex align-items-center '>
      
-            <img src={user} className='d-none d-lg-block' />
+            <img src={users} className='d-none d-lg-block' />
             <span className='d-lg-none d-block'>Profile</span>
             <div >
-            <NavDropdown id="basic-nav-dropdown" className='d-lg-block d-none me-1'>
-            <NavDropdown.Item >Log Out</NavDropdown.Item>
-          </NavDropdown>
+           
           </div>
+          <NavDropdown id="basic-nav-dropdown" className='d-lg-block d-none me-1'>
+            <NavDropdown.Item onClick={()=>logOut()} >Log Out</NavDropdown.Item>
+          </NavDropdown>
           </Nav.Link>
           <Nav.Link  className='d-lg-none d-block'>
             Log Out

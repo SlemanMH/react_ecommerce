@@ -1,0 +1,31 @@
+.home{
+    color: #000;
+    opacity: 0.5;
+    font-weight: 500;
+}
+.error{
+    color: #000;
+    font-weight: 500;
+}
+.detailsError{
+    align-items: center;
+}
+.detailsError h2{
+    font-size: 90px;
+}
+.detailsError p{
+font-weight: 500;
+}
+.detailsError button{
+    padding: 10px 30px ;
+    background-color: #DB4444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+@media (max-width:768px){
+    .detailsError h2{
+        font-size:50px;
+    }
+    
+ }
