@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from './forgetPassword.module.css'
+import style from './forgetpassword.module.css'
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import sideImage from '../../../assets/images/auth/sideImage.png'
